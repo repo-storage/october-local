@@ -10404,7 +10404,6 @@ html.cssanimations .cursor-loading-indicator.hide {
   filter: alpha(opacity=100);
 }
 .oc-bg-logo {
-  background-image: url(../images/october-logo-transparent.svg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: 50% auto;
