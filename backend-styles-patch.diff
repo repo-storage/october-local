@@ -1,0 +1,140 @@
+From 633f87d2343120a7739b5456ebfa963aa66f5e6b Mon Sep 17 00:00:00 2001
+From: Shawn Sandy <shawnsandy04@gmail.com>
+Date: Thu, 3 Jul 2014 13:28:34 -0400
+Subject: [PATCH] Backend stylesheet edits
+
+---
+ modules/backend/assets/css/october.css           | 1 -
+ modules/backend/assets/less/controls/common.less | 6 +++---
+ 2 files changed, 3 insertions(+), 4 deletions(-)
+
+diff --git a/modules/backend/assets/css/october.css b/modules/backend/assets/css/october.css
+index a52cdd7..b512df8 100644
+--- a/modules/backend/assets/css/october.css
++++ b/modules/backend/assets/css/october.css
+@@ -10404,7 +10404,6 @@ html.cssanimations .cursor-loading-indicator.hide {
+   filter: alpha(opacity=100);
+ }
+ .oc-bg-logo {
+-  background-image: url(../images/october-logo-transparent.svg);
+   background-position: 50% 50%;
+   background-repeat: no-repeat;
+   background-size: 50% auto;
+diff --git a/modules/backend/assets/less/controls/common.less b/modules/backend/assets/less/controls/common.less
+index 63f6e3a..b9a92c9 100644
+--- a/modules/backend/assets/less/controls/common.less
++++ b/modules/backend/assets/less/controls/common.less
+@@ -3,7 +3,7 @@
+ // --------------------------------------------------
+ 
+ //
+-// The scroll panel can host a scrollbar control. It has a right border that covers 
++// The scroll panel can host a scrollbar control. It has a right border that covers
+ // the scrollbar to satisfy the design requirements.
+ //
+ .control-scrollpanel {
+@@ -27,7 +27,7 @@
+ }
+ 
+ .oc-bg-logo {
+-    background-image: url(../images/october-logo-transparent.svg);
++    //background-image: url(../images/october-logo-transparent.svg);
+     background-position: 50% 50%;
+     background-repeat: no-repeat;
+     background-size: 50% auto;
+@@ -136,4 +136,4 @@
+             padding: 10px 0 0 0;
+         }
+     }
+-}
+\ No newline at end of file
++}
+-- 
+1.8.4.2
+
+From 001c86dff316127b74b22872326ae00244eed49e Mon Sep 17 00:00:00 2001
+From: Shawn Sandy <shawnsandy04@gmail.com>
+Date: Thu, 3 Jul 2014 14:10:18 -0400
+Subject: [PATCH] Modified backend styles
+
+---
+ modules/backend/assets/css/october.css          | 2 +-
+ modules/backend/assets/less/core/variables.less | 4 ++--
+ modules/system/assets/css/settings.css          | 2 +-
+ modules/system/assets/less/settings.less        | 5 +++--
+ 4 files changed, 7 insertions(+), 6 deletions(-)
+
+diff --git a/modules/backend/assets/css/october.css b/modules/backend/assets/css/october.css
+index b512df8..0c9eab8 100644
+--- a/modules/backend/assets/css/october.css
++++ b/modules/backend/assets/css/october.css
+@@ -7704,7 +7704,7 @@ body.mainmenu-open .mainmenu-collapsed ul {
+   }
+ }
+ #layout-sidenav {
+-  background-color: #34495e;
++  background-color: #2b343d;
+   position: absolute;
+   height: 100%;
+   width: 100%;
+diff --git a/modules/backend/assets/less/core/variables.less b/modules/backend/assets/less/core/variables.less
+index b613137..9e07699 100644
+--- a/modules/backend/assets/less/core/variables.less
++++ b/modules/backend/assets/less/core/variables.less
+@@ -68,7 +68,7 @@
+ @color-footer-border:                        #dfdfdf;
+ @color-footer-text:                          #666666;
+ 
+-@color-sidebarnav-bg:                        #34495E;
++@color-sidebarnav-bg:                        #2B343D;
+ @color-sidebarnav-inactive-text:             #808b93;
+ @color-sidebarnav-inactive-icon:             #808b93;
+ @color-sidebarnav-active-text:               #ffffff;
+@@ -260,4 +260,4 @@
+ // --------------------------------------------------
+ 
+ @menu-breakpoint-min:           770px;
+-@menu-breakpoint-max:           (@menu-breakpoint-min - 1);
+\ No newline at end of file
++@menu-breakpoint-max:           (@menu-breakpoint-min - 1);
+diff --git a/modules/system/assets/css/settings.css b/modules/system/assets/css/settings.css
+index 12ad137..67bac53 100644
+--- a/modules/system/assets/css/settings.css
++++ b/modules/system/assets/css/settings.css
+@@ -57,7 +57,7 @@
+   color: #555;
+ }
+ .control-settings .settings-items .settings-item > a .item-icon i {
+-  font-size: 52px;
++  font-size: 36px;
+   line-height: 64px;
+ }
+ .control-settings .settings-items .settings-item > a:hover h5 {
+diff --git a/modules/system/assets/less/settings.less b/modules/system/assets/less/settings.less
+index aa216b1..7b5ed7f 100644
+--- a/modules/system/assets/less/settings.less
++++ b/modules/system/assets/less/settings.less
+@@ -1,3 +1,4 @@
++//out: ../css/settings.css
+ @import "../../../backend/assets/less/core/boot.less";
+ 
+ .control-settings {
+@@ -61,7 +62,7 @@
+                 text-align: center;
+                 color: #555;
+                 i {
+-                    font-size: 52px;
++                    font-size: 36px;
+                     line-height: 64px;
+                 }
+             }
+@@ -77,4 +78,4 @@
+         }
+     }
+ 
+-}
+\ No newline at end of file
++}
+-- 
+1.8.4.2
+
